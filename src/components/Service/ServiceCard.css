@@ -1,0 +1,60 @@
+:root {
+  --icon-background: #e8eff6;
+  --font: #777777;
+  --box-shadow: #dfe3f1;
+  --box-shadow-measure: 5px 5px 15px 15px;
+}
+
+.card-row {
+  display: grid;
+  /* grid-template-columns: 22% 22% 22%; */
+  justify-content: end;
+  margin-right: 100px;
+}
+
+/* look of the card */
+.services-card {
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  box-shadow: var(--box-shadow-measure) var(--box-shadow);
+  border: none;
+  background-color: #fff;
+}
+/* style for icons */
+.service-icons {
+  margin-top: 1.5rem;
+  background-color: var(--icon-background);
+  padding: 10px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 4rem;
+  height: 4rem;
+  align-self: center;
+}
+/* style for title */
+.service-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-top: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* style for body */
+.service-body {
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Roboto", sans-serif;
+  color: var(--font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+}

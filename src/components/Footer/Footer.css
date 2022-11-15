@@ -1,0 +1,57 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #f4fafa;
+}
+
+.follow {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 21px;
+  color: #777777;
+  font-weight: 700;
+  margin-top: 48px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+.social-logo {
+  font-size: 36px;
+  color: #777777;
+}
+
+.social-logo:hover {
+  color: #e45447;
+  transition: all 0.3s ease 0s;
+}
+
+.my-name {
+  color: #e45447;
+  text-decoration: none;
+}
+.my-name:hover {
+  text-decoration: none;
+  color: #e45447;
+}
+
+#scrollUp {
+  background: #90acd1;
+  height: 50px;
+  width: 50px;
+  right: 31px;
+  bottom: 18px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}

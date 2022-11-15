@@ -1,0 +1,116 @@
+:root {
+  --font: #222222;
+  --hover: #e45447;
+  --background: #ecf4fc;
+}
+.NavbarItems {
+  background: var(--background);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  font-size: 1rem;
+  padding-top: 1.5vw;
+  font-weight: lighter;
+}
+
+.navbar-logo {
+  color: var(--font);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  bottom: 40px;
+}
+/* navbar logo */
+.logo {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--font);
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 10px;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  list-style: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--font);
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: var(--hover);
+  border-radius: 4px;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+/* navbar hamburger menu icon and cross icon */
+.fa-bars,
+.fa-times {
+  color: var(--font);
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* responsive view */
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background: var(--background);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-links {
+    text-align: center;
+    /* padding: 2rem; */
+    width: 100%;
+    display: table;
+  }
+
+  .nav-link:hover {
+    background-color: var(--hover);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+  }
+}

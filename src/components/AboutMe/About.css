@@ -1,0 +1,86 @@
+.About {
+  background-color: var(--background);
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.about-container {
+  display: grid;
+}
+
+@media screen and (min-width: 960px) {
+  .about-container {
+    grid-template-columns: 50% 50%;
+    height: var(--min-height);
+  }
+}
+/* about me */
+.about-header {
+  color: var(--main-font);
+  font-weight: bolder;
+  position: relative;
+  text-align: left;
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.about-image {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.divider {
+  width: 30%;
+  position: relative;
+  border-top: 5px solid var(--special-font);
+}
+
+/* two liner intro */
+.about-intro {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-heading);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+  text-align: left;
+}
+
+.about-details {
+  margin-top: 1.5rem;
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-heading);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+}
+
+.about-details-list {
+  display: flex;
+}
+
+.about-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--main-font);
+  width: 130px;
+}
+
+.about-body {
+  width: calc(100% - 130px);
+}
