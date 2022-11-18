@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Intro from "./Intro";
 import "./Home.scss";
 
-class Home extends Component {
-  render() {
+
+function Home(){
+ 
     return (
       <div className="Home" id="home">
         <div className="container">
@@ -33,7 +34,7 @@ class Home extends Component {
             </div>
             <div className="image image-fluid">
               <img
-                src="images/witch.svg"
+                src="images/Homepng.svg"
                 alt="Masudha"
                 height="300"
                 width="300"
@@ -44,6 +45,6 @@ class Home extends Component {
       </div>
     );
   }
-}
+
 
 export default Home;
