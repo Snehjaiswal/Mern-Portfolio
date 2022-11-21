@@ -1,6 +1,7 @@
 .Resume{
   padding-top: 5vh;
   padding-bottom: 5vh;
+  background-color: var(--background);
 }
 
 .resume-container {
@@ -9,15 +10,16 @@
   margin-bottom: 30px;
   padding: 2rem 3rem 2rem 3rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 15px 1px #90acd1;
+  // box-shadow: 1px 1px 15px 1px #90acd1;
+  
   
 }
 
-.resume-container:hover{
-    background-color:#90acd1;
-    box-shadow: 10px 10px 10px 10px #f9f9ff;
-    color: #fff;
-}
+// .resume-container:hover{
+//     background-color:#90acd142;
+//     box-shadow: 10px 10px 10px 10px #f9f9ff;
+//     color: #fff;
+// }
 
 .achievement-year{
   font-weight: 700;

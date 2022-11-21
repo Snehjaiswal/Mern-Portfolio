@@ -8,9 +8,17 @@
 .card-row {
   display: grid;
   /* grid-template-columns: 22% 22% 22%; */
-  justify-content: end;
+  justify-content: center;
   margin-right: 100px;
+  display: flex;
+  margin: 30px;
 }
+
+.services-card:hover{
+  box-shadow: var(--box-shadow-measure) 3var(--box-shadow);
+
+}
+
 
 /* look of the card */
 .services-card {
@@ -18,7 +26,6 @@
   margin-top: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  box-shadow: var(--box-shadow-measure) var(--box-shadow);
   border: none;
   background-color: #fff;
 }

@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer" id="footer">
-        <img src="images/m.svg" alt="logo" height="70" weight="70" />
+        {/* <img src="images/m.svg" alt="logo" height="70" weight="70" /> */}
         <h4 className="follow">Reach out to me at</h4>
         <MDBContainer
           style={{

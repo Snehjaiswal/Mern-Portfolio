@@ -1,6 +1,8 @@
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-import "./App.css";
 import About from "./components/AboutMe/About";
 import Services from "./components/Service/Services";
 import Resume from "./components/Resume/Resume";
@@ -12,12 +14,20 @@ import Achievements from "./components/Resume/Achievement/Achievements";
 import Education from "./components/Resume/Education/Education";
 import Internship from "./components/Resume/Internship/Internship";
 import Skills from "./components/Resume/Skills/Skills";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+
+
+
+
+// Admin Dashboard
+import AdHome from './components/Admin/home/AdHome';
+
+
+
+
 
 
 const style = {
@@ -25,7 +35,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 800,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -54,32 +64,30 @@ function App() {
   return (
     <>
       <Router>
-
-        <div className="App">
-          <Navbar />
-          <Home />
-          <Services />
-          <About />
-          <Resume />
-          <ProjectWork />
-          <Blog />
-          <Contact />
-          <Footer />
-        </div>
-
+        <Navbar />
         <Routes>
-          <Route path="/about" component={About} />
-          <Route path="/home" component={Home} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/services" component={Services} />
-          <Route path="/projects" component={ProjectWork} />
-          <Route path="/blogs" component={Blog} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/achievement" component={Achievements} />
-          <Route path="/education" component={Education} />
-          <Route path="/internship" component={Internship} />
-          <Route path="/skills" component={Skills} />
+
+          {/* Client Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<ProjectWork />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/achievement" element={<Achievements />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/internship" element={<Internship />} />
+          <Route path="/skills" element={<Skills />} />
+
+
+
+
+          {/* Admin Routes */}
+          <Route path="/admin/home" element={<AdHome />} />
+
         </Routes>
+        <Footer />
       </Router>
 
       <Modal
@@ -90,10 +98,10 @@ function App() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+           Welcome....
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Hello I am sneh jaiswal Welcome to my portfoliyo webside.
           </Typography>
         </Box>
       </Modal>
