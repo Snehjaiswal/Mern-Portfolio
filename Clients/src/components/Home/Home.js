@@ -48,11 +48,13 @@ function Home() {
             />
           </div>
           <div className="image image-fluid">
-            <img
+            <img id="homepng"
               src="images/Homepng.svg"
+              // src="images/Homepng.gif"
+              // src="https://www.animatedimages.org/data/media/545/animated-child-image-0113.gif"
               alt="Masudha"
-              height="300"
-              width="300"
+              height="350"
+              width="350"
             />
           </div>
         </div>

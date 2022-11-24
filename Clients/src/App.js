@@ -20,13 +20,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 
-
-
 // Admin Dashboard
 import AdHome from './components/Admin/home/AdHome';
-
-
-
 
 
 
@@ -68,7 +63,7 @@ function App() {
         <Routes>
 
           {/* Client Routes */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<><Home /> <Resume /><Services /><ProjectWork /><Blog /><Contact /><Contact /><Achievements /><Education /><Internship /><Skills /></>} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/services" element={<Services />} />

@@ -1,12 +1,12 @@
 :root {
   --min-height: 80vh;
-  --top-gap: 3.25vw;
-  --right-gap: 6.51vw;
-  --left-gap: 6.51vw;
+  --top-gap: 3.95vw;
+  --right-gap: 5.11vw;
+  --left-gap: 6.31vw;
   --fontsize: 2.8rem;
   --sub-heading: #90acd1;
   --main-font: #222222;
-  --special-font: #e45447;
+  --special-font: #ff0000d5;
   --background: #e1f5fe;
   --light-heading: #777777;
 }
@@ -14,6 +14,8 @@
 .Home {
   background-color: var(--background);
 }
+
+
 
 /* grid */
 .container {
@@ -43,7 +45,7 @@
 }
 @media screen and (min-width: 960px) {
   .image {
-    padding-left: 200px;
+    padding-left: 150px;
   }
 }
 
