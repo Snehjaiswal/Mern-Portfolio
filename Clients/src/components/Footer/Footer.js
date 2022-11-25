@@ -25,16 +25,16 @@ class Footer extends Component {
           <a href="https://github.com/Snehjaiswal" className="social-logo">
             <MDBIcon fab icon="github" />
           </a>
-          {/* <a href="https://samflab.medium.com" className="social-logo">
-            <MDBIcon fab icon="medium-m" />
-          </a> */}
-          <a href="#!" className="social-logo">
+            <a href="#" className="social-logo">
+              <MDBIcon fab icon="medium-m" />
+            </a>
+          <a href="https://7b1y9b-3000.preview.csb.app/" className="social-logo">
             <MDBIcon fab icon="hackerrank" />
           </a>
         </MDBContainer>
         <span>
           Made ♡ by{" "}
-          <a className="my-name" href="https://github.com/samflab/Portfolio">
+          <a className="my-name" href="about">
             Sneh Jaiswal
           </a>
         </span>
