@@ -54,6 +54,9 @@ class Cards extends React.Component {
               <Row>
                 <span className="achievement-desc">{item.desc}</span>
               </Row>
+              <Row>
+              <a onClick={()=>{  window.open(item.url);}}>View</a>
+              </Row>
             </Col>
           );
         })}
