@@ -63,7 +63,7 @@ function App() {
         <Routes>
 
           {/* Client Routes */}
-          <Route path="/" element={<><Home /> <Resume /><Services /><ProjectWork /><Blog /><Contact /><Contact /><Achievements /><Education /><Internship /><Skills /></>} />
+          <Route path="/" element={<><Home /> <Resume /><Services /><ProjectWork /><Blog /><Contact /></>} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/services" element={<Services />} />
