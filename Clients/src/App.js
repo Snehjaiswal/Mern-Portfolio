@@ -22,6 +22,8 @@ import Modal from '@mui/material/Modal';
 
 // Admin Dashboard
 import AdHome from './components/Admin/home/AdHome';
+import Form from './components/Admin/home/Form';
+
 
 
 
@@ -46,12 +48,12 @@ function App() {
 
   useEffect(() => {
 
-    setTimeout(() => {
-      handleOpen()
-    }, 5000)
-    setTimeout(() => {
-      handleClose()
-    }, 8000)
+    // setTimeout(() => {
+    //   handleOpen()
+    // }, 5000)
+    // setTimeout(() => {
+    //   handleClose()
+    // }, 8000)
   }, [])
 
 
@@ -63,26 +65,28 @@ function App() {
         <Routes>
 
           {/* Client Routes */}
-          <Route path="/" element={<><Home /> <Resume /><Services /><ProjectWork /><Blog /><Contact /></>} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<ProjectWork />} />
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/achievement" element={<Achievements />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/internship" element={<Internship />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/" element={<><Home /> <Resume /><Services /><ProjectWork /><Blog /><Contact /><Footer /></>} />
+          <Route path="/about" element={<><About /><Footer /></>} />
+          <Route path="/resume" element={<><Resume /><Footer /></>} />
+          <Route path="/services" element={<><Services /><Footer /></>} />
+          <Route path="/projects" element={<><ProjectWork /><Footer /></>} />
+          <Route path="/blogs" element={<><Blog /><Footer /></>} />
+          <Route path="/contact" element={<><Contact /><Footer /></>} />
+          {/* <Route path="/achievement" element={<Achievements />} /> */}
+          {/* <Route path="/education" element={<Education />} /> */}
+          {/* <Route path="/internship" element={<Internship />} /> */}
+          {/* <Route path="/skills" element={<Skills />} /> */}
 
 
 
 
           {/* Admin Routes */}
           <Route path="/admin/home" element={<AdHome />} />
+          <Route path="/admin/form" element={<Form />} />
+
 
         </Routes>
-        <Footer />
+        
       </Router>
 
       <Modal
