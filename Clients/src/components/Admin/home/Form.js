@@ -4,34 +4,56 @@ import './Form.css'
 
 
 function Form() {
+
     
-const [getData,setData] = useState([])
-const [getName,setName] = useState("")
-const [getEmail,setEmail] = useState("")
+    const [getData, setData] = useState([])
+    const [getName, setName] = useState("")
+    const [getEmail, setEmail] = useState("")
+    
+   console.log("getName" ,getName);
+   console.log("getEmail" ,getEmail);
+    
+   var arr = []
 
-console.log("getName",getName);
+    var pushData = (e) => {
+        e.preventDefault()
 
+        arr.push({ 'name': getName, 'email': getEmail })
+
+        console.log("arr", arr);
+       
+    }
 
     return (
         <>
-
             <div className="row">
                 <div className="col-md-12">
-                    <form >
+                    <form>
                         <h1> Sign Up </h1>
                         <fieldset>
                             <legend>
                                 <span className="number">1</span> Your Basic Info
                             </legend>
                             <label htmlFor="name">Name:</label>
-                            <input type="text" id="name" name="user_name" autocomplete="off" defaultValue={getData} onChange={(e)=>{setName(e.target.value)}} />
-
-
+                            <input type="text" id="name" name="user_name" autocomplete="off" defaultValue={getData.name} onChange={(e) => { setName(e.target.value) }} />
                             <label htmlFor="email">Email:</label>
-                            <input type="email" id="mail" name="user_email" />
+                            <input type="email" id="mail" name="user_email"  defaultValue={getData.email} onChange={(e) => { setEmail(e.target.value) }} />  
+                        </fieldset>               
+                        <button  onClick={(e)=>{pushData(e)}}>Sign Up</button>
+                    </form>
+                </div>
+            </div></>
+    )
+}
+
+export default Form
 
 
-                            {/* <label htmlFor="password">Password:</label>
+
+
+
+
+     {/* <label htmlFor="password">Password:</label>
                             <input type="password" id="password" name="user_password" />
 
 
@@ -55,8 +77,8 @@ console.log("getName",getName);
                             <label htmlFor="over_13" className="light">
                                 Over 13
                             </label> */}
-                        </fieldset>
-                        {/* <fieldset>
+
+                                {/* <fieldset>
                             <legend>
                                 <span className="number">2</span> Your Profile
                             </legend>
@@ -74,11 +96,3 @@ console.log("getName",getName);
                                 </optgroup>
                             </select>
                         </fieldset> */}
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
-            </div></>
-    )
-}
-
-export default Form
