@@ -3,26 +3,26 @@ import emailjs from "emailjs-com";
 import "./Contact.scss";
 
 export default function Contact() {
-  function sendEmail(e) {
-    e.preventDefault();
+  // function sendEmail(e) {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_r26azg2",
-        "template_joii25r",
-        e.target,
-        "user_Ok12WTP0cvyrzSFOEutop"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+  //   emailjs
+  //     .sendForm(
+  //       "service_r26azg2",
+  //       "template_joii25r",
+  //       e.target,
+  //       "user_Ok12WTP0cvyrzSFOEutop"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // }
   return (
     <div className="ContactMe" id="contact">
       <h1 className="about-header" style={{ textAlign: "center" }}>
@@ -75,7 +75,8 @@ export default function Contact() {
         </Col>
         <Col>
           <div className="form-group">
-            <form onSubmit={sendEmail}>
+            <form  action="https://script.google.com/macros/s/AKfycbx5XUFYaS4iyyRJOKQVAfMcy_eRcXxkQDcfXKXIVRtetSYjm6PrDOAm9ODaySZcDiQ/exec"
+                      method="post" role="form">
               <div class="row">
                 <div class="form-group name1 col-md-6">
                   <input

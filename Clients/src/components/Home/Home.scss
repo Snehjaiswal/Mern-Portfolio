@@ -1,18 +1,19 @@
-:root {
-  --min-height: 80vh;
-  --top-gap: 3.95vw;
-  --right-gap: 5.11vw;
-  --left-gap: 6.31vw;
-  --fontsize: 2.8rem;
-  --sub-heading: #90acd1;
-  --main-font: #222222;
-  --special-font: #ff0000d5;
-  --background: #e1f5fe;
-  --light-heading: #777777;
-}
+// :root {
+//   --min-height: 80vh;
+//   --top-gap: 3.95vw;
+//   --right-gap: 5.11vw;
+//   --left-gap: 6.31vw;
+//   --fontsize: 2.8rem;
+//   --sub-heading: #90acd12e;
+//   --main-font: #222222;
+//   --special-font: #ff0000d5;
+//   --background: #19a5e656;
+//   --light-heading: #160d0d;
+// }
 
 .Home {
-  background-color: var(--background);
+  // background-color: var(--background);
+  height: 700px;
 }
 
 
@@ -106,6 +107,7 @@ h2 {
   z-index: 1;
   border: 0;
   overflow: hidden;
+  width: 200px;
 }
 
 /* animated circle */

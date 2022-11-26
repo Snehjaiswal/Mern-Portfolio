@@ -12,27 +12,19 @@ function Home() {
       <div className="container">
         <div className="header">
 
-          <span class="subheading">Hey! I am </span>
-          <h1 className="myName"> Sneh Jaiswal !</h1>
+          {/* <span class="subheading">Hey! I am </span> */}
+          <h2 className="subheading"> Hey! I am</h2>
+
+          <h2 className="myName"> Sneh Jaiswal !</h2>
           <h2>
             <Intro />
           </h2>
           <br />
           <h4 className="introduction">
-            Few more lines that I need to write about me, but at the moment I
-            can't figure it out. So I am just gonna put it here and decide for
-            it later.
+          ɪ ɴᴇᴇᴅ ᴛᴏ ᴡʀɪᴛᴇ ᴍᴏʀᴇ ʟɪɴᴇꜱ ᴀʙᴏᴜᴛ ᴍʏꜱᴇʟꜰ, ʙᴜᴛ ɪ ᴄᴀɴ'ᴛ ꜰɪɢᴜʀᴇ ɪᴛ ᴏᴜᴛ ᴀᴛ ᴛʜᴇ ᴍᴏᴍᴇɴᴛ. ꜱᴏ ɪ ᴡɪʟʟ ᴊᴜꜱᴛ ᴘᴜᴛ ɪᴛ ʜᴇʀᴇ ᴀɴᴅ ᴅᴇᴄɪᴅᴇ ᴏɴ ɪᴛ ʟᴀᴛᴇʀ.
           </h4>
-          <h4 className="introduction">
-            Few more lines that I need to write about me, but at the moment I
-            can't figure it out. So I am just gonna put it here and decide for
-            it later.
-          </h4>
-          <h4 className="introduction">
-            Few more lines that I need to write about me, but at the moment I
-            can't figure it out. So I am just gonna put it here and decide for
-            it later.
-          </h4>
+        <br /> <br /> <br /> <br /><br /><br /> <br />
+
           <button className="contact-me" onClick={() => {
             navigation('/contact')
           }}> Contact Me</button>
@@ -50,8 +42,6 @@ function Home() {
           <div className="image image-fluid">
             <img id="homepng"
               src="images/Homepng.svg"
-              // src="images/Homepng.gif"
-              // src="https://www.animatedimages.org/data/media/545/animated-child-image-0113.gif"
               alt="Masudha"
               height="350"
               width="350"

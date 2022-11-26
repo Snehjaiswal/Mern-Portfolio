@@ -4,7 +4,7 @@
   --background: #ecf4fc;
 }
 .NavbarItems {
-  background: var(--background);
+  /* background: var(--background); */
   height: 70px;
   display: flex;
   justify-content: center;
